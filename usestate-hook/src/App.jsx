@@ -7,11 +7,7 @@ function App() {
   const [name, setName] = useState('Tom');
 
 function changeName() {
-  if (name === 'Tom') {
-    setName('Jan');
-  } else {
-    setName('Tom');
-  }
+  name == ('Tom') ? setName('Jan') : setName('Tom');
 }
 
   return (
