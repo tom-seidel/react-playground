@@ -6,7 +6,7 @@ function App() {
   const [counter, setCounter] = useState(0);
   
 function changeName() {
-  name == ('Tom') ? setName('Jan') : setName('Tom');
+  name === ('Tom') ? setName('Jan') : setName('Tom');
 }
 
 
