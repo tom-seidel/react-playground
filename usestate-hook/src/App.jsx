@@ -6,14 +6,19 @@ import './App.css'
 function App() {
   const [name, setName] = useState('Tom');
 
-  const chaneName = () => {
+function changeName() {
+  if (name === 'Tom') {
     setName('Jan');
+  } else {
+    setName('Tom');
   }
+}
 
   return (
     <>
-      <h1>{name}</h1>
-      <button onClick={chaneName}>Change Name</button>
+      <h1>Change Name:</h1>
+      <p>{name}</p>
+      <button onClick={changeName}>Change Name</button>
     </>
   )
 }
